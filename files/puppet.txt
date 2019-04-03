@@ -1,0 +1,17 @@
+puppet
+--noop --show_diff
+puppet resource -e package openssl =>ouvrir et gener un fichier pp
+ sudo puppet apply --noop --show_diff file_hello.pp 
+  puppet describe service
+  puppet describe --list
+notify => restart du service dans un file
+require
+
+provider par default est celui de NOEUD puppet
+hasstatus 
+pattern => si le nom est different du nom du service (ex: ntpd)
+hasrestart (systemctl restart) sinon restart => commande lancer en tache de fond
+onlyif =0 
+unless !=0
+logoutput
+/opt/puppetlabs/facter/facts.d/ => facts perso
